@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <style>
+        nav.satu{
+          display: flex;
+          background-color: rgb(219, 255, 255);
+            margin-top: 30px;
+        }
+        nav.wedus{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+
+        }
+        nav.dua{
+            background-color: rgb(219, 255, 255);
+            margin-top: 30px;
+        }
+
+        
+        
+    </style>
+    <title>tugas 6</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PRODUCT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">GALERRY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BLOG</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">INVENTORY</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- header -->
+      <div class="card text-dark bg-light my-3 col p-6 mb-4 rounded-3">
+        <div class="card-body">
+            <div class="row" >
+                <div class="col-sm-3">
+                  <img src="web-developer-16-957564.png"; width=240 height=240 />
+                  <style>
+                      img {
+                        border-radius: 20%;
+
+                      }
+                      </style>                          
+                </div>
+                <div class="col-sm-3">
+                  <h3 id="nama">Charlie Bagawan</h3>
+                  <p id="role">Fresh Graduate</p>
+            <button class="btn btn-primary" onclick="show('kanan')">Edit</button>
+            <button type="button" class="btn btn-outline-success">Resume</button>
+                </div>
+              <div class="col-sm-3">
+                <table class="table table-borderless">
+              <div class="waduh">
+                  <table>
+                      <tr>
+                      <td><h4>availability</h4></td>
+                      <td id="avail">full time</td>
+                      </tr>
+                      <tr>
+                      <td><h4>Usia</h4></td>
+                      <td id="umur">17</td>
+                      </tr>
+                      <tr>
+                      <td><h4>Lokasi</h4></td>
+                      <td id="alamat">Tangerang, Indonesia</td>
+                      </tr>
+                      <tr>
+                      <td><h4>Pengalaman</h4></td>
+                      <td id="pengalaman">2</td>
+                      </tr>
+                      <tr>
+                      <td><h4>Email</h4></td>
+                      <td id="email">Developer@gmail.com</td>
+                      </tr>
+                    </table>
+              </div>
+              </div>
+
+    </nav>
+
+    </div>
+
+    <!-- isi -->
+    <nav class="dua">
+        <div class="alert alert-success" id="kanan" style="display: none;">
+          <div class="col-12">
+            <label for="inputNama" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="inputNama">
+          </div>
+          <div class="col-12">
+            <label for="inputRole" class="form-label">Role</label>
+            <input type="text" class="form-control" id="inputRole">
+          </div>
+          <div class="col-12">
+            <label for="inputAvail" class="form-label">Availablility</label>
+            <input type="text" class="form-control" id="inputAvail">
+          </div>
+          <div class="col-12">
+            <label for="inputUmur" class="form-label">Usia</label>
+            <input type="text" class="form-control" id="inputUmur">
+          </div>
+          <div class="col-12">
+            <label for="inputAlamat" class="form-label">Lokasi</label>
+            <input type="text" class="form-control" id="inputAlamat">
+          </div>
+          <div class="col-12">
+            <label for="inputPengalaman" class="form-label">Years Exsperience</label>
+            <input type="text" class="form-control" id="inputPengalaman">
+          </div>
+          <div class="col-12">
+            <label for="inputEmail" class="form-label">Email</label>
+            <input type="text" class="form-control" id="inputEmail">
+          </div>
+          <div>
+            <div class="d-grid gap-2">
+              <button type="submit" onclick="dom1UpdateText()" class="btn btn-primary">Submit</button>
+          </div>
+        </Div>
+    </div>
+</nav>
+
+<!-- footer -->
+
+
+<script>
+  const hide = side => {
+    let elKiri = document.getElementById(side)
+    elKiri.style.display = "none"
+  }
+
+  const show = side => {
+    let elKiri = document.getElementById(side)
+    elKiri.style.display = "block"
+  }
+</script>
+
+<script src="./idejnd.js"></script>
+
+
+    
+</body>
+</html>
